@@ -1,14 +1,14 @@
 import java.util.Random;
+import java.util.HashSet;
 
 public class Lotto { 
 	public static void main(String[] args) { 
 	    Random rand = new Random();
-        int tab[] = new int[6];
-        for (int i = 0; i < 6; i++)
+        HashSet<Integer> tab = new HashSet<Integer>();
+        while(tab.size() < 6)
         {
-            tab[i] = rand.nextInt(49) + 1;
+            tab.add(rand.nextInt(49) + 1);
         }
-        for (int i = 0; i < 6; i++)
-            System.out.print(tab[i]+" "); 
-	} 
+        System.out.print(tab);
+    }
 } 
