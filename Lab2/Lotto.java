@@ -12,6 +12,14 @@ public class Lotto {
             }
             tab.add(n);
         }
-        System.out.print(tab);
+
+        ArrayList<Integer> twojeTypy = new ArrayList<>();
+        for (int i = 0; i < 6; i++)
+            twojeTypy.add(Integer.parseInt(args[i]));
+
+        System.out.println("Twoje typy: "+twojeTypy);
+        System.out.println("Wylosowane liczby: "+tab);
+        twojeTypy.retainAll(tab);
+        System.out.println(twojeTypy.size());
     }
 } 
