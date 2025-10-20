@@ -34,5 +34,6 @@ public class CodingBatTest {
         assertEquals(0, CodingBat.countEvens(new int[]{1, 3, 5}));
         assertEquals(0, CodingBat.countEvens(new int[]{}));
         assertEquals(1, CodingBat.countEvens(new int[]{11,9,0,1}));
+        assertEquals(2, CodingBat.countEvens(new int[]{2,11,9,0}));
     }
 }
