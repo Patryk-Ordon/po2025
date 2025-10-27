@@ -21,7 +21,9 @@ public class Zoo {
                     animals[i] = new Dog("Dog "+i);
                     break;
             }
+            int legs = animals[i].getLegs();
             animals[i].getDescription();
+            animals[i].makeSound();
         }
     }
 

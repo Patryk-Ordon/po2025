@@ -10,4 +10,9 @@ public class Parrot extends Animal {
     public String getDescription() {
         return "Parrot";
     }
+
+    @Override
+    public void makeSound() {
+        System.out.println("DźwiękPapugi.mp3");
+    }
 }
