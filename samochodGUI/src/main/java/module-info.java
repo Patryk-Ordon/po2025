@@ -10,6 +10,7 @@ module org.example.samochodgui {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires symulator;
 
     opens org.example.samochodgui to javafx.fxml;
     exports org.example.samochodgui;

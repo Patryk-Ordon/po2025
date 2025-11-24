@@ -29,22 +29,22 @@
                         </padding>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Model" />
-                            <TextField fx:id="modelPojazduTextField" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="modelPojazduTextField" onAction="#onModelPojazduTextField" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Nr rejestracyjny" />
-                            <TextField fx:id="nrRejestracyjnyTextField" alignment="CENTER" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="nrRejestracyjnyTextField" onAction="#onNrRejestracyjnyTextField" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Waga" />
-                            <TextField fx:id="wagaPojazduTextField" alignment="CENTER" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="wagaPojazduTextField" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Prędkość" />
-                            <TextField fx:id="predkoscPojazduTextField" alignment="CENTER" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="predkoscPojazduTextField" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
-                            <Button fx:id="startButton" maxWidth="1.7976931348623157E308" text="Włącz" HBox.hgrow="ALWAYS" />
+                            <Button fx:id="startButton" maxWidth="1.7976931348623157E308" onAction="#onStartButton" text="Włącz" HBox.hgrow="ALWAYS" />
                             <Button fx:id="offButton" maxWidth="1.7976931348623157E308" text="Wyłącz" HBox.hgrow="ALWAYS" />
                             <Button fx:id="explodeButton" maxWidth="1.7976931348623157E308" text="Wybuch" HBox.hgrow="ALWAYS" />
                         </HBox>
@@ -61,15 +61,15 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Cena" />
-                            <TextField fx:id="cenaSkrzyniTextField" alignment="CENTER" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="cenaSkrzyniTextField" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Waga" />
-                            <TextField fx:id="wagaSkrzyniTextField" alignment="CENTER" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="wagaSkrzyniTextField" alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Bieg" />
-                            <TextField fx:id="biegTextField" alignment="CENTER" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="biegTextField" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Button fx:id="zwiekszBiegButton" maxWidth="1.7976931348623157E308" text="Zwiększ bieg" HBox.hgrow="ALWAYS" />
@@ -88,15 +88,15 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Cena" />
-                            <TextField fx:id="cenaSilnikaTextField" alignment="CENTER" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="cenaSilnikaTextField" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Waga" />
-                            <TextField fx:id="wagaSilnikaTextField" alignment="CENTER" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="wagaSilnikaTextField" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Obroty" />
-                            <TextField fx:id="obrotySilnikaTextField" alignment="CENTER" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="obrotySilnikaTextField" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Button fx:id="zwiekszObrotyButton" maxWidth="1.7976931348623157E308" text="Zwiększ obroty" HBox.hgrow="ALWAYS" />
@@ -115,15 +115,15 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Cena" />
-                            <TextField fx:id="cenaSprzeglaTextBox" alignment="CENTER" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="cenaSprzeglaTextBox" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Waga" />
-                            <TextField fx:id="wagaSprzeglaTextBox" alignment="CENTER" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="wagaSprzeglaTextBox" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Label text="Stan" />
-                            <TextField fx:id="stanSprzeglaTextBox" alignment="CENTER" HBox.hgrow="ALWAYS" />
+                            <TextField fx:id="stanSprzeglaTextBox" HBox.hgrow="ALWAYS" />
                         </HBox>
                         <HBox alignment="CENTER_LEFT" spacing="5.0">
                             <Button fx:id="sprzegloOnButton" maxWidth="1.7976931348623157E308" text="Naciśnij" HBox.hgrow="ALWAYS" />
