@@ -11,6 +11,9 @@ module org.example.samochodgui {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires symulator;
+    requires javafx.graphics;
+    requires java.desktop;
+
 
     opens org.example.samochodgui to javafx.fxml;
     exports org.example.samochodgui;

@@ -8,4 +8,5 @@ public class Main {
         mojTraktor.wlacz();
         mojTraktor.getAktPozycja();
     }
+
 }

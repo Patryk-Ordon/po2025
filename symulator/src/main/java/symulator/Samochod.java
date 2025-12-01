@@ -17,6 +17,13 @@ public class Samochod {
         skrzynia = new SkrzyniaBiegow("Skrzynia tego pojazdu", 300.0, 2000.0, "URSUS", "D324",iloscBiegow);
         aktualnaPozycja = new Pozycja(x,y);
     }
+    public String getModel() {
+        return this.model;
+    }
+    public String getNrRejestracyjny() {
+        return this.nrRejest;
+    }
+
     public void wlacz() {
         silnik.uruchom();
     }
