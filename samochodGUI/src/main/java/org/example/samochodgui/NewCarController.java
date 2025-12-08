@@ -35,7 +35,7 @@ public class NewCarController {
             System.out.println("Niepoprawne dane. Spróbuj ponownie.");
             return;
         }
-        HelloController.addCarToList(model, registration, weight, speed);
+        //HelloController.addCarToList(model, registration, weight, speed);
         Stage stage = (Stage) confirmButton.getScene().getWindow();
         stage.close();
     }
