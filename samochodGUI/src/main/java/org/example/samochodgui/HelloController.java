@@ -53,6 +53,7 @@ public class HelloController implements Listener {
     public ImageView carImageView;
     public AnchorPane mapa;
     public VBox carIcon;
+    public Label carImageLabel;
     private ArrayList<Samochod> carList;
     private symulator.Samochod samochod;
 
@@ -134,6 +135,8 @@ public class HelloController implements Listener {
             nazwaSprzeglaTextBox.setText(String.valueOf(samochod.getSkrzynia().getSprzeglo().getNazwa()));
             wagaSprzeglaTextBox.setText(String.valueOf(samochod.getSkrzynia().getSprzeglo().getWaga()));
             cenaSprzeglaTextBox.setText(String.valueOf(samochod.getSkrzynia().getSprzeglo().getCena()));
+
+            carImageLabel.setText(String.valueOf(samochod.getModel()));
             if (samochod.getSkrzynia().getSprzeglo().getStanSprzegla()) {
                 stanSprzeglaTextBox.setText("Załączone");
             } else {

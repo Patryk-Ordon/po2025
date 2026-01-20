@@ -38,7 +38,7 @@ public class Samochod extends Thread{
         this.predkoscMax = predkoscMax;
         this.silnik = silnik;
         this.skrzynia = skrzynia;
-        this.cel = new Pozycja(100,100);
+        this.cel = new Pozycja(10,10);
         this.start();
     }
     public String getModel() { return this.model; }

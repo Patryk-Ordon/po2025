@@ -147,7 +147,7 @@
                 <AnchorPane fx:id="mapa" style="-fx-background-color: lime;" VBox.vgrow="ALWAYS">
                     <VBox fx:id="carIcon" alignment="CENTER">
                         <ImageView fx:id="carImageView" fitHeight="50" fitWidth="80" pickOnBounds="true" preserveRatio="true" />
-                        <Label alignment="CENTER" text="Seat Ibiza" textAlignment="CENTER" />
+                        <Label fx:id="carImageLabel" alignment="CENTER" text="Seat Ibiza" textAlignment="CENTER" />
                     </VBox>
                 </AnchorPane>
             </VBox>
