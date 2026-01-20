@@ -3,25 +3,37 @@ package symulator;
 public class Silnik extends Komponent {
     int maxObroty;
     int obroty;
-    Silnik(String nazwa, Double waga, Double cena, String producent, String model, int maxObroty) {
+    public Silnik(String nazwa, Double waga, Double cena, String producent, String model, int maxObroty) {
         super(nazwa, waga, cena, producent, model);
         this.maxObroty = maxObroty;
         this.obroty = 0;
     }
-    void uruchom() {
+    public int getObroty() { return obroty; }
+    boolean uruchom() {
         obroty = 800;
+        return true;
     }
-    void zatrzymaj() {
+    boolean zatrzymaj() {
         obroty = 0;
+        return true;
     }
-    void zwiekszObroty() {
+    boolean zwiekszObroty() {
         if (obroty + 100 <= maxObroty) {
             obroty += 100;
+            return true;
         }
+        return false;
     }
-    void zmniejszObroty() {
-        if (obroty-100 >= 0) {
-            obroty -= 100;
+    boolean zmniejszObroty() {
+        if(obroty > 0) {
+            if (obroty - 100 >= 0) {
+                obroty -= 100;
+                return true;
+            } else if (obroty - 100 <= 0) {
+                obroty = 0;
+                return true;
+            }
         }
+        return false;
     }
 }

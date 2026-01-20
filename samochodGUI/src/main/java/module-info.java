@@ -9,8 +9,7 @@ module org.example.samochodgui {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
-    requires com.almasb.fxgl.all;
-    requires symulator;
+    requires org.example.symulator;
     requires javafx.graphics;
     requires java.desktop;
 

@@ -5,35 +5,38 @@ public class SkrzyniaBiegow extends Komponent {
     int iloscBiegow;
     int aktualnePrzelozenie;
     Sprzeglo sprzeglo;
-    SkrzyniaBiegow(String nazwa, Double waga, Double cena, String producent, String model,int iloscBiegow) {
+    public SkrzyniaBiegow(String nazwa, Double waga, Double cena, String producent, String model, int iloscBiegow, Sprzeglo sprzeglo) {
         super(nazwa,waga,cena,producent,model);
         this.iloscBiegow = iloscBiegow;
-        int aktualnyBieg = 0;
-        int aktualnePrzelozone = 0;
-        sprzeglo = new Sprzeglo("Sprzeglo tej skrzyni",waga,cena,producent,"Sprzeglo");
+        aktualnyBieg = 0;
+        aktualnePrzelozenie = 0;
+        this.sprzeglo = sprzeglo;
     }
-    void zwiekszBieg() {
+    public boolean zwiekszBieg() {
+        boolean zmieniono = false;
         if (aktualnyBieg < iloscBiegow) {
-            sprzeglo.wcisnij();
             if (sprzeglo.stanSprzegla) {
                 aktualnyBieg++;
-                sprzeglo.zwolnij();
+                zmieniono = true;
             }
         }
+        return zmieniono;
     }
-    void zmniejszBieg() {
+    public boolean zmniejszBieg() {
+        boolean zmieniono = false;
         if (aktualnyBieg > 0) {
-            sprzeglo.wcisnij();
             if(sprzeglo.stanSprzegla){
                 aktualnyBieg--;
-                sprzeglo.zwolnij();
+                zmieniono = true;
             }
         }
+        return zmieniono;
     }
-    int getAktBieg() {
+    public int getAktualnyBieg() {
         return aktualnyBieg;
     }
-    int getAktualnePrzelozenie() {
+    public int getAktualnePrzelozenie() {
         return aktualnePrzelozenie;
     }
+    public Sprzeglo getSprzeglo() { return sprzeglo; }
 }

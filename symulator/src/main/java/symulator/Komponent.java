@@ -19,7 +19,7 @@ public abstract class Komponent {
     public Double getWaga(){
         return waga;
     }
-    public Double Cena(){
+    public Double getCena(){
         return cena;
     }
     public String getProducent() {

@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.geometry.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.samochodgui.NewCarController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.samochodgui.NewCarController">
     <VBox spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -28,13 +22,20 @@
             <TextField fx:id="wagaPojazduTextField" HBox.hgrow="ALWAYS" />
         </HBox>
         <HBox alignment="CENTER_LEFT" spacing="5.0">
-            <Label text="Prędkość" />
+            <Label text="Prędkość maksymalna" />
             <TextField fx:id="predkoscPojazduTextField" HBox.hgrow="ALWAYS" />
         </HBox>
+      <HBox alignment="CENTER_LEFT" spacing="5.0">
+        <Label text="Silnik" />
+        <ComboBox fx:id="silnikComboBox" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS" />
+      </HBox>
         <HBox alignment="CENTER_LEFT" spacing="5.0">
-            <Button fx:id="confirmButton" maxWidth="1.7976931348623157E308" onAction="#onConfirmButton" text="Włącz"
-                    HBox.hgrow="ALWAYS"/>
-            <Button fx:id="cancelButton" maxWidth="1.7976931348623157E308" onAction="#onCancelButton" text="Wyłącz" HBox.hgrow="ALWAYS" />
+            <Label text="Skrzynia biegów" />
+            <ComboBox fx:id="skrzyniaComboBox" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minWidth="-Infinity" HBox.hgrow="ALWAYS" />
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="5.0">
+            <Button fx:id="confirmButton" maxWidth="1.7976931348623157E308" onAction="#onConfirmButton" text="Dodaj" HBox.hgrow="ALWAYS" />
+            <Button fx:id="cancelButton" maxWidth="1.7976931348623157E308" onAction="#onCancelButton" text="Anuluj" HBox.hgrow="ALWAYS" />
         </HBox>
     </VBox>
 </AnchorPane>
